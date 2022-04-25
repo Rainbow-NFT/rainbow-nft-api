@@ -2,10 +2,10 @@
 This is a simple express app that uses ethers.js to retrieve data from Rinkeby via an Alchemy RPC.  Currently set for requesting data from Rainbow NFT: https://rinkeby.etherscan.io/address/0xce4346e22dd8288d2971416d29e99db22385e0a4
 
 ## Setup
-Copy example.env & create .env
+#### Create .env from example.env
 `cp example.env .env`
 
-Add Alchemy api key to .env
+#### Add Alchemy api key to .env
 `ALCHEMY_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXX`
 
 ## Running
