@@ -5,7 +5,8 @@ This is a simple express app that uses ethers.js to retrieve data from Ethereum.
 ## Running
 `yarn`
 
-`PRIVATE_KEY={private_key} yarn start`
+##### opens port 5000
+`yarn start`
 
 ## Built With
 
