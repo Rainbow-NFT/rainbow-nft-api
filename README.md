@@ -5,7 +5,7 @@ This is a simple express app that uses ethers.js to retrieve data from Rinkeby v
 #### Create .env from example.env
 `cp example.env .env`
 
-#### Add Alchemy api key to .env
+#### Add Alchemy API key to .env
 `ALCHEMY_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXX`
 
 ## Running
