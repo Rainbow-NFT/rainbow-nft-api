@@ -1,7 +1,4 @@
-import { 
-    _currentTokenId,
-    totalSupply
-} from './providers'
+import { _currentTokenId, totalSupply } from './providers'
 
 const createRoute = (call: Function) => async (req, res) => {
     try {
