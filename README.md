@@ -1,12 +1,17 @@
-# Ethers Express Server
-This is a simple express app that uses ethers.js to retrieve data from Ethereum. There are a few basic routes getting the ERC20 supply for the TrueFi token, meant to be used as an example for anyone that wants to build a simple service in ethers.js
-  
+# Rainbow NFT Express Server
+This is a simple express app that uses ethers.js to retrieve data from Rinkeby.
 
 ## Running
 `yarn`
 
-##### opens port 5000
 `yarn start`
+
+## GET Requests | local instance
+#### get currentTokenId
+`curl localhost:5000/currentTokenId`
+
+#### get totalSupply
+`curl localhost:5000/totalSupply`
 
 ## Built With
 
