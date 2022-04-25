@@ -17,11 +17,12 @@ const provider = new AlchemyProvider(NETWORK, API_KEY);
 // Setup interface for RainbowNFT Contract
 const rainbow = new ethers.Contract(CONTRACT_ADDRESS, SvgBitpack.abi, provider);
 
-// Get current token Id
+// Get current tokenId
 export const _currentTokenId = async () => {
   return await rainbow.currentTokenId();
 }
 
+// Get totalSupply
 export const totalSupply = async () => {
   return await rainbow.TOTAL_SUPPLY();
 }
