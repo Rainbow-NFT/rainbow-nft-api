@@ -1,5 +1,5 @@
 # Rainbow NFT API Server
-This is a simple express app that uses ethers.js to retrieve data from Rinkeby via an Alchemy RPC.  Currently set for requesting data from Rainbow NFT: https://rinkeby.etherscan.io/address/0xce4346e22dd8288d2971416d29e99db22385e0a4
+This is a simple express app that uses ethers.js to retrieve data from Rinkeby via an Alchemy RPC.  Currently set for requesting data from Rainbow NFT contract: https://rinkeby.etherscan.io/address/0xce4346e22dd8288d2971416d29e99db22385e0a4
 
 ## Setup
 #### Create .env from example.env
