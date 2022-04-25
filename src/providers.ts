@@ -12,10 +12,11 @@ const CONTRACT_ADDRESS = "0xce4346e22dD8288D2971416d29E99DB22385E0A4";
 // Set network
 const NETWORK = "rinkeby"
 // set provider from infura & network
-const provider = new AlchemyProvider(NETWORK, API_KEY)
+const provider = new AlchemyProvider(NETWORK, API_KEY);
 
 // Setup interface for RainbowNFT Contract
-const rainbow = new ethers.Contract(CONTRACT_ADDRESS, SvgBitpack.abi, provider)
+const rainbow = new ethers.Contract(CONTRACT_ADDRESS, SvgBitpack.abi, provider);
+
 // Get current token Id
 export const _currentTokenId = async () => {
   return await rainbow.currentTokenId();
