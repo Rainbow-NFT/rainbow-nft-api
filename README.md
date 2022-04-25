@@ -1,4 +1,4 @@
-# Rainbow NFT Express Server
+# Rainbow NFT API Server
 This is a simple express app that uses ethers.js to retrieve data from Rinkeby.  Currently set for requesting data from Rainbow NFT: https://rinkeby.etherscan.io/address/0xce4346e22dd8288d2971416d29e99db22385e0a4
 
 ## Setup
