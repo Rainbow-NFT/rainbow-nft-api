@@ -25,10 +25,11 @@ This is a simple express app that uses ethers.js to retrieve data from Rinkeby v
 
 ## Built With
 
+ethers-express: https://github.com/hal909/ethers-express
+
 ethers.js https://docs.ethers.io/v5/
   
 typescript:  https://www.typescriptlang.org/
   
 express: https://expressjs.com/
-  
-yarn: https://yarnpkg.com/
+
