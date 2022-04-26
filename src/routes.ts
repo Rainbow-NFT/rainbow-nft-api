@@ -1,4 +1,4 @@
-import { _currentTokenId, totalSupply, _tokenURI } from './providers'
+import { _currentTokenId, _totalSupply, _randomTokenURI } from './providers'
 
 const createRoute = (call: Function) => async (req, res) => {
     try {
@@ -11,5 +11,5 @@ const createRoute = (call: Function) => async (req, res) => {
 }
 
 export const currentTokendId_ = createRoute(_currentTokenId)
-export const totalSupply_ = createRoute(totalSupply)
-export const tokenURI_ = createRoute(_tokenURI)
+export const totalSupply_ = createRoute(_totalSupply)
+export const randomTokenURI_ = createRoute(_randomTokenURI)

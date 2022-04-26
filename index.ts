@@ -2,7 +2,7 @@ const express = require('express')
 const { 
     currentTokendId_,
     totalSupply_,
-    tokenURI_
+    randomTokenURI_
 } = require('./src/routes')
 
 const app = express()
@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.get('/currentTokenId', currentTokendId_)
 app.get('/totalSupply', totalSupply_)
-app.get('/tokenURI', tokenURI_)
+app.get('/randomTokenURI', randomTokenURI_)
 
 const port = process.env.PORT || 5000
 

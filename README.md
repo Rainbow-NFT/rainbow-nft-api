@@ -9,9 +9,9 @@ This is a simple express app that uses ethers.js to retrieve data from Rinkeby v
 `ALCHEMY_KEY = XXXXXXXXXXXXXXXXXXXXXXXXXXX`
 
 ## Running
-`yarn`
+`npm install`
 
-`yarn start`
+`npm run start`
 
 ## GET Requests
 #### currentTokenId
@@ -19,6 +19,9 @@ This is a simple express app that uses ethers.js to retrieve data from Rinkeby v
 
 #### totalSupply
 `curl ${url}/totalSupply`
+
+#### randomTokenURI
+`curl ${url}/randomTokenURI`
 
 ## Built With
 
