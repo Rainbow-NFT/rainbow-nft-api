@@ -32,7 +32,7 @@ export const _randomTokenURI = async () => {
   const _currentTokenId = await rainbow.currentTokenId();
   const randomNumber = Math.floor(Math.random() * _currentTokenId) + Number(1); 
   const tokenURI = await rainbow.tokenURI(randomNumber);
-   return JSON.stringify("{'tokenId': '" + randomNumber + "', 'tokenURI': '" + tokenURI + "'}");
+   return String('{"tokenId": "' + randomNumber + '", "tokenURI": "' + tokenURI + '"}');
 }
 
 export { rainbow }
