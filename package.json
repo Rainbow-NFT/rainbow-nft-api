@@ -1,11 +1,11 @@
 {
-  "name": "truefi-api",
+  "name": "rainbow-nft-api",
   "version": "1.0.0",
-  "description": "TrueFi API",
+  "description": "Rainbow NFT API",
   "main": "index.js",
-  "repository": "https://github.com/trusttoken/truefi-api.git",
-  "author": "Hal Hyatt <feewet@gmail.com>",
-  "license": "MIT",
+  "repository": "https://github.com/trusttoken/rainbow-nft-api.git",
+  "author": "Abran DeCarlo <abrandec@protonmail.com>",
+  "license": "AGPL-3.0-only",
   "compilerOptions": {
     "module": "esnext"
   },

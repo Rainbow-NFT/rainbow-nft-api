@@ -27,4 +27,8 @@ export const totalSupply = async () => {
   return await rainbow.TOTAL_SUPPLY();
 }
 
+export const _tokenURI = async () => {
+  return await rainbow.tokenURI(1);
+}
+
 export { rainbow }
