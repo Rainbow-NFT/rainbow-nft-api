@@ -27,8 +27,12 @@ export const totalSupply = async () => {
   return await rainbow.TOTAL_SUPPLY();
 }
 
+// Fetch random tokenId (1 - currentTokenId)
 export const _tokenURI = async () => {
-  return await rainbow.tokenURI(1);
+  const _currentTokenId = await rainbow.currentTokenId();
+  const randomNumber = Math.floor(Math.random() * _currentTokenId) + Number(1); 
+  const tokenURI = await rainbow.tokenURI(randomNumber);
+   return JSON.stringify("{'tokenId': '" + randomNumber + "', 'tokenURI': '" + tokenURI + "'}");
 }
 
 export { rainbow }
