@@ -3,17 +3,12 @@ const { currentTokendId_, totalSupply_, randomTokenURI_ } = require('./src/route
 const cors = require('cors');
 const app = express();
 
+app.use(cors());
+
 // 🌈🌈🌈
 app.get('/', (req, res) => {
   res.send('Rainbow NFT API');
 });
-
-app.use(cors({
-  origin: '*'
-}));
-
-
-
 
 app.get('/currentTokenId', currentTokendId_);
 app.get('/totalSupply', totalSupply_);
