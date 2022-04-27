@@ -1,6 +1,6 @@
 const express = require('express');
 const { currentTokendId_, totalSupply_, randomTokenURI_ } = require('./src/routes');
-
+const cors = require('cors');
 const app = express();
 
 // 🌈🌈🌈
@@ -8,14 +8,10 @@ app.get('/', (req, res) => {
   res.send('Rainbow NFT API');
 });
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5000");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+app.use(cors({
+  origin: '*'
+}));
+
 
 
 
