@@ -35,4 +35,8 @@ export const _randomTokenURI = async () => {
   return String('{"tokenId": "' + randomNumber + '", "tokenURI": "' + tokenURI + '"}');
 }
 
+export const _sniffer = async () => {
+  return String('Imagine the smell 👃');
+}
+
 export { rainbow }

@@ -1,5 +1,5 @@
 const express = require('express');
-const { currentTokendId_, totalSupply_, randomTokenURI_ } = require('./src/routes');
+const { currentTokendId_, totalSupply_, randomTokenURI_, sniffer_ } = require('./src/routes');
 const cors = require('cors');
 const app = express();
 
@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
 app.get('/currentTokenId', currentTokendId_);
 app.get('/totalSupply', totalSupply_);
 app.get('/randomTokenURI', randomTokenURI_);
+app.get('/sniffer', sniffer_);
 
 const port = process.env.PORT || 5000;
 
